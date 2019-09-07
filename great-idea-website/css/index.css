@@ -54,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +64,148 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+a {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+nav {
+	display: inline-block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+	width: 100vw;
+    text-align: center;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 15px 0;
+}
+nav > * {
+    vertical-align: middle;
+}
+nav a {
+    display: inline-block;
+    margin: 0 Calc(1.5vw + 10px);
+    font-size: 14px;
+    color: #777;
+}
+nav a:hover {
+    color: #1e90ff;
+}
+.logo {
+    width: 183px;
+    height: 36px;
+    background: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.spin {
+    transition: 0.4s ease-in-out;
+}
+.spin:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 70px auto 0;
+}
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 50px auto;
+}
+header div {
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.big-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
+    
+}
+.big-box h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.big-box a {
+    border: 1px solid #000;
+    padding: 3px 35px;
+    color: #000;
+}
+.big-box a:hover{
+    background: #1e90ff;
+    color: #fff;
+    border-color: #fff;
+}
+.img-head {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/header-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 379px;
+    height: 379px;
+    border-radius: 100%;
+}
+
+main {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+section{
+    display: inline-block;
+    width: 95%;
+    margin: 15px auto;
+}
+.img-snips {
+    background: url("../img/mid-page-accent.jpg");
+    background-position: center;
+    height: 182px;
+}
+article {
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    
+}
+.twos article {
+    display: inline-block;
+    width: Calc(50% - 2px);
+}
+.threes article {
+    display: inline-block;
+    width: 33%;
+}
+
+footer {
+    margin-top: 40px;
+}
+footer address{
+    width: 95%;
+    margin: 0 auto;
+    line-height: 110%;
+}
+footer a{
+    color: #000;
+}
+footer a:hover{
+    color: #1e90ff;
+}
+.copy{
+    text-align: center;
+    margin: 20px auto;
+}
